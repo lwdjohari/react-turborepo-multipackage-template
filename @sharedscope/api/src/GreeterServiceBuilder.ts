@@ -1,18 +1,18 @@
 import { GrpcWebFetchTransport } from "@protobuf-ts/grpcweb-transport";
 import { ClientOptions } from "@sharedscope/core"
 
-import { EchoServiceClientModule } from "../src/index";
+import { EchoServiceClientModule } from "./index";
 import { Err, Ok, Result } from "@sharedscope/core";
 
 
-export enum TretaClientType {
+export enum GreeterClientType {
     UNKNOWN = 0,
     ECHO_SVC_CLIENT = 1,
 }
 
-export class TretacoreServiceBuilder {
+export class GreeterServiceBuilder {
 
-    static getServiceClient<T>(clientType: TretaClientType, arg: ClientOptions): Result<T, Error>{
+    static getServiceClient<T>(clientType: GreeterClientType, arg: ClientOptions): Result<T, Error>{
         let client: T = undefined as T;
         let transport: GrpcWebFetchTransport;
         const is_have_endpoint = arg.endpoint() != null;
@@ -54,7 +54,7 @@ export class TretacoreServiceBuilder {
 
         }
 
-        if (clientType === TretaClientType.ECHO_SVC_CLIENT) {
+        if (clientType === GreeterClientType.ECHO_SVC_CLIENT) {
             client = new EchoServiceClientModule.EchoServiceClient(transport) as T;
         }
 

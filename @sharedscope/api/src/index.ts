@@ -1,2 +1,2 @@
-export * from './tretacore';
-export * from './TretacoreServiceBuilder';
+export * from './greeter';
+export * from './GreeterServiceBuilder';

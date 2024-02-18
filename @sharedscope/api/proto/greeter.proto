@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package tretacore;
+package greeter;
 
 import "google/protobuf/timestamp.proto";
 import "internals/common.proto";
-import "tretacore/echo.service.proto";
+import "greeter/echo.service.proto";

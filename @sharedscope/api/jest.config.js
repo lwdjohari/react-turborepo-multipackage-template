@@ -5,7 +5,7 @@ module.exports = {
   moduleDirectories: ["node_modules", "src"],
   "testPathIgnorePatterns": [
     "/node_modules/",
-    "/src/tretacore/"
+    "/src/greeter/"
   ],
   testEnvironment: "jsdom",
   testMatch: ["**/tests/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"],
@@ -14,6 +14,6 @@ module.exports = {
   collectCoverageFrom: [
     "src/**/*.{ts,tsx}", 
     "!src/**/*.d.ts",
-    // Exclude /src/tretacore/ from coverage -- tretacore is generated from protobuf-ts
-    "!src/tretacore/**/*" ],
+    // Exclude /src/greeter/ from coverage -- greeter is generated from protobuf-ts
+    "!src/greeter/**/*" ],
 };

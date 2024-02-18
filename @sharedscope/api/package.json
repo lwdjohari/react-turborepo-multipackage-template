@@ -10,7 +10,7 @@
     "license": "Apache-2.0",
     "scripts": {
         "build": "tsc --p ./tsconfig-build.json && vite build",
-        "proto-gen": "node ./proto-gen.js --proto=./proto,./src/tretacore,tretacore.proto ",
+        "proto-gen": "node ./proto-gen.js --proto=./proto,./src/greeter,greeter.proto ",
         "clean": "rm -rf package-lock.json dist",
         "reset": "rm -rf node_modules package-lock.json dist",
         "test": "jest"
