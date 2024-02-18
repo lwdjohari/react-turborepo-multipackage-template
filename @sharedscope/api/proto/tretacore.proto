@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package tretacore;
+
+import "google/protobuf/timestamp.proto";
+import "internals/common.proto";
+import "tretacore/echo.service.proto";

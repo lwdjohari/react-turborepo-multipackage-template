@@ -1,0 +1,45 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "dist/**"
+      ]
+    },
+    "lint": {},
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "clean": {
+      "cache": false
+    },
+    "reset": {
+      "cache": false
+    },
+    "proto-gen": {
+      "cache": false
+    },
+    "test": {
+      "cache": false
+    },
+    "start": {
+      "cache": false
+    },
+    "preview": {
+      "cache": false
+    },
+    "reset-ws": {
+      "cache": false
+    },
+    "clean-lib":{
+      "cache": false
+    },
+    "clean-all": {
+      "cache": false
+    }
+  }
+}

@@ -1,0 +1,14 @@
+node_modules/
+package-lock.json*
+yarn.lock*
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+storybook-static/
+.nx*
+.yarn/install-state.gz*
+.yarn*
+.turbo*
+@proto.zip
+coverage/

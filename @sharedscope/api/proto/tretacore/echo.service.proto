@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package tretacore;
+
+import "google/protobuf/timestamp.proto";
+import "internals/common.proto";
+
+message EchoRequest {
+    string message = 1;
+    google.protobuf.Timestamp timestamp = 2;
+    TimeSpan timeSpan = 3;
+  }
+  
+message EchoResponse {
+    string message = 1;
+    google.protobuf.Timestamp timestamp = 2;
+    TimeSpan timeSpan = 3;
+  }
+  
+  service EchoService {
+    rpc Echo(EchoRequest) returns (EchoResponse);
+  }

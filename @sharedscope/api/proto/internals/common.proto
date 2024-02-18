@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+message TimeSpan{
+    google.protobuf.Timestamp start = 1;
+    google.protobuf.Timestamp end = 2;
+}
+
+message PageRequest{
+    uint64 page = 1;
+    uint64 page_size = 2;
+    bool paginate = 3;
+}
+
+message PageInfo{
+    uint64 total_records = 1;
+    uint64 total_pages = 2;
+    uint64 page = 3;
+    uint64 page_size = 4;
+}
