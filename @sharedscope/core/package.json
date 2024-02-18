@@ -7,7 +7,7 @@
         "email": "linggawasistha.djohari@outlook.com"
     },
     "version": "0.2.3",
-    "license": "Apache-2.0",
+    "license": "MIT",
     "scripts": {
         "build": "tsc --p ./tsconfig-build.json && vite build",
         "proto-gen": "node ./proto-gen.js --proto=./proto,./src/trident,trident.proto --proto=./proto,./src/tretacore,tretacore.proto ",
