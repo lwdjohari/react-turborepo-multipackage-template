@@ -10,6 +10,7 @@
     "name": "Linggawasistha Djohari",
     "email": "linggawasistha.djohari@outlook.com"
   },
+  "license":"MIT",
   "version": "0.2.3",
   "scripts": {
     "build-lib": "turbo run build   --filter @sharedscope/core --filter @sharedscope/api --filter @sharedscope/ui",
