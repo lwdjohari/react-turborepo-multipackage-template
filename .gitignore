@@ -8,7 +8,6 @@ yarn-error.log*
 storybook-static/
 .nx*
 .yarn/install-state.gz*
-.yarn*
+.yarn.lock*
 .turbo*
-@proto.zip
 coverage/
